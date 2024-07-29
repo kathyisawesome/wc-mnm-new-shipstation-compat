@@ -4,7 +4,7 @@
  * Plugin Name: WooCommerce Mix and Match - New Shipstation Compat
  * Plugin URI:  https://woocommerce.com/products/woocommerce-mix-and-match-products/
  * Description: Test a new approach to ShipStation compatibility with Mix and Match.
- * Version: 1.0.0
+ * Version: 1.0.0-beta.1
  * Author: Kathy Darling
  * Author URI: kathyisawesome.com
  * 
