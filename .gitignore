@@ -35,3 +35,6 @@ assets/
 
 # Editor
 .vscode/
+
+#Zips
+*.zip

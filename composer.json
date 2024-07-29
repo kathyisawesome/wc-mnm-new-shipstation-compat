@@ -1,0 +1,38 @@
+{
+    "name": "kathyisawesome/wc-mnm-new-shipstation-compat",
+    "description": "Explore a new approach to ShipStation compatibility with Mix and Match",
+    "homepage": "https://github.com/kathyisawesome/wc-mnm-new-shipstation-compat",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0-or-later",
+    "require-dev": {
+        "woocommerce/woocommerce-sniffs": "^1.0.0",
+        "wp-cli/dist-archive-command": "^3.0"
+      },
+      "scripts": {
+        "zip": [
+          "wp --allow-root dist-archive . ./deploy --filename-format={name}-{version} --create-target-dir"
+        ],
+        "phpcs": [
+            "phpcs . -s -p -n --extensions=php"
+        ],
+        "phpcs-pre-commit": [
+          "phpcs . -s -p -n"
+        ],
+        "phpcb": [
+            "phpcbf . --extensions=php"
+        ]
+      },
+      "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+      },
+      "extra": {
+        "scripts-description": {
+            "zip": "Make a .zip file of plugin",
+            "phpcs": "Analyze code against the WordPress coding standards with PHP_CodeSniffer",
+            "phpcb": "Fix coding standards warnings/errors automatically with PHP Code Beautifier"
+        }
+      }
+  }
